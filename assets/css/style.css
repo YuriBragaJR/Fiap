@@ -20,39 +20,46 @@
     --color-purple: #973ebd;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 2.2)), url(../images/1130469.png);
+    font-size: 1.6rem;
     width: 100%;
     height: 100vh;    
-    background-size: cover;
     background-repeat: no-repeat; 
-    background-position: center;
+    background-size: cover;
+    background-position: top center;
     background-color: var(--color-black);
 }
 
 
 nav img {
-    width: 15rem;
-    height: 2rem;
-    margin: 8px;
+    width: 20rem;
+    height: 3rem;
+    margin: 0.5px;
 }
 
 div.container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin:auto;
+    
 }
+
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top:2rem;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1.5rem;
     flex-wrap: wrap;
     font-weight: 500;
 }
@@ -67,6 +74,7 @@ nav ul {
     border: 2px solid var(--color-white);
     padding: 4px 15px;
     border-radius: 7px;
+    transition: 0.5s;
 }
 
 .btn {
@@ -74,8 +82,9 @@ nav ul {
     border: 2px solid var(--color-purple);
     padding: 7px 15px;
     border-radius: 7px;
-    
+    transition: 0.5s;
 }
+
 .btn-bottom {
     background-color: var(--color-darkgreen);
     border: 2px solid var(--color-darkgreen);
@@ -85,25 +94,60 @@ nav ul {
     transition: 0.3s;
 }
 
+.btn-bottom i {
+    vertical-align: middle; 
+    margin-left: 5px;
+}
+
+.btn i,.btn-outline i {
+    vertical-align: middle; 
+    margin-left: 5px;
+}
+
+
+div i {
+    font-size: 22px;
+}
+
+
 .body-script {
-    width: 70%;
     display: flex;
-    justify-content: space-between;
+    width: 60%;
+    height: 200px;
+    justify-content:space-between;
     flex-wrap: wrap;
-    padding-top: 5rem;
-    font-size: 18px;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    margin-left: 12rem;
+    margin-top: 12rem;
     
 }
 
 .body-script h1 {
-    margin-top: 20px;
-    font-size: 2.2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
 }
 
 .body-script p {
-    margin: 20px 0 70px 0;
-    font-weight: 450;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.btn-bottom {
+    margin-top: 50px;
+    word-spacing: 3px;
+}
+
+.fa-gamepad {
+    font-size: 25px;
+}
+
+.container a:hover {
+    color: #973ebd;
+    transition: 0.5s;
+    
 }
 
 .btn-bottom:hover {
@@ -111,16 +155,27 @@ nav ul {
     background-color: transparent;
     color: var(--color-green);
     border: 2px solid var(--color-green);
+    .fa-gamepad {
+        color: var(--color-green)
+    }
 }
+
 
 .btn:hover {
     border: 2px solid var(--color-purple);
     color: var(--color-purple);
     background-color: transparent;
     transition: 0.5s;
+    .fa-user-plus {
+        color: var(--color-purple);
+    }    
 }
 .btn-outline:hover {
     border: 2px solid var(--color-white);
     background-color: var(--color-white);
     color: var(--color-black);
+    .fa-right-to-bracket {
+        color: var(--color-purple);
+    }
 }
+
