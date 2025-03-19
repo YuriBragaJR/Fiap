@@ -21,7 +21,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../images/1130469.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 2.2)), url(../images/1130469.png);
     width: 100%;
     height: 100vh;    
     background-size: cover;
@@ -60,11 +60,11 @@ nav ul {
 .linha {
     background-color:var(--color-white);
     width: 2px;
-    height: 20px;
+    height: 40px;
 }
 
 .btn-outline {
-    border: 1px solid var(--color-white);
+    border: 2px solid var(--color-white);
     padding: 4px 15px;
     border-radius: 7px;
 }
@@ -78,6 +78,7 @@ nav ul {
 }
 .btn-bottom {
     background-color: var(--color-darkgreen);
+    border: 2px solid var(--color-darkgreen);
     padding: 7px 15px;
     border-radius: 7px;
     font-weight: 500;
@@ -106,8 +107,7 @@ nav ul {
 }
 
 .btn-bottom:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: transparent;
     color: var(--color-green);
     border: 2px solid var(--color-green);
@@ -115,6 +115,12 @@ nav ul {
 
 .btn:hover {
     border: 2px solid var(--color-purple);
-    transform: scale(1.1);
+    color: var(--color-purple);
+    background-color: transparent;
     transition: 0.5s;
+}
+.btn-outline:hover {
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
