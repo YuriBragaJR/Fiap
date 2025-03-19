@@ -111,8 +111,8 @@ div i {
 
 
 .body-script {
+    width: 70%;
     display: flex;
-    width: 60%;
     height: 200px;
     justify-content:space-between;
     flex-wrap: wrap;
