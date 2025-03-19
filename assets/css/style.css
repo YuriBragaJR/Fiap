@@ -5,9 +5,116 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+    color: var(--color-white);
 }
 
 /*Variaveis*/
 :root {
+    --color-white: #FFFFFF;
+    --color-darkgreen: #197339;
+    --color-black: #000000;
+    --color-green: #80D941;
+    --color-purple: #973ebd;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../images/1130469.png);
+    width: 100%;
+    height: 100vh;    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: var(--color-black);
+}
+
+
+nav img {
+    width: 15rem;
+    height: 2rem;
+    margin: 8px;
+}
+
+div.container {
+    width: 80%;
+    max-width: 1200px;
+    margin:auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.linha {
+    background-color:var(--color-white);
+    width: 2px;
+    height: 20px;
+}
+
+.btn-outline {
+    border: 1px solid var(--color-white);
+    padding: 4px 15px;
+    border-radius: 7px;
+}
+
+.btn {
+    background-color: var(--color-purple);
+    border: 2px solid var(--color-purple);
+    padding: 7px 15px;
+    border-radius: 7px;
     
+}
+.btn-bottom {
+    background-color: var(--color-darkgreen);
+    padding: 7px 15px;
+    border-radius: 7px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.body-script {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    font-size: 18px;
+    
+}
+
+.body-script h1 {
+    margin-top: 20px;
+    font-size: 2.2rem;
+}
+
+.body-script p {
+    margin: 20px 0 70px 0;
+    font-weight: 450;
+    letter-spacing: 1px;
+}
+
+.btn-bottom:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: transparent;
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+}
+
+.btn:hover {
+    border: 2px solid var(--color-purple);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
