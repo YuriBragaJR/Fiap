@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
     color: var(--color-white);
 }
 
@@ -18,20 +17,23 @@
     --color-black: #000000;
     --color-green: #80D941;
     --color-purple: #973ebd;
+    
 }
 
 html {
     font-size: 62.5%;
-}
+    scroll-behavior: smooth;
+    }
+
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 2.2)), url(../images/1130469.png);
     font-size: 1.6rem;
     width: 100%;
-    height: 100vh;    
+    height: 160vh;    
     background-repeat: no-repeat; 
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     background-color: var(--color-black);
 }
 
@@ -59,10 +61,12 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.6rem;
     flex-wrap: wrap;
     font-weight: 500;
 }
+
+
 
 .linha {
     background-color:var(--color-white);
@@ -72,7 +76,7 @@ nav ul {
 
 .btn-outline {
     border: 2px solid var(--color-white);
-    padding: 4px 15px;
+    padding: 7px 15px;
     border-radius: 7px;
     transition: 0.5s;
 }
@@ -94,50 +98,44 @@ nav ul {
     transition: 0.3s;
 }
 
-.btn-bottom i {
-    vertical-align: middle; 
-    margin-left: 5px;
-}
-
-.btn i,.btn-outline i {
+.btn i,.btn-outline i,.btn-bottom i {
     vertical-align: middle; 
     margin-left: 5px;
 }
 
 
 div i {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
-.body-script {
+.corpo-site {
     width: 70%;
     display: flex;
-    height: 200px;
+    height: 40%p;
     justify-content:space-between;
     flex-wrap: wrap;
     padding: 1.5rem;
-    gap: 1.2rem;
-    margin-left: 12rem;
-    margin-top: 12rem;
+    gap: 50px;
+    margin: 12rem auto;
     
 }
 
-.body-script h1 {
-    font-size: 3rem;
+.corpo-site h1 {
+    max-width: 70vw;
+    font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
 }
 
-.body-script p {
-    font-size: 1.5rem;
+.corpo-site p {
     letter-spacing: 2px;
     font-weight: 500;
 }
 
 .btn-bottom {
-    margin-top: 50px;
-    word-spacing: 3px;
+    margin-top: 1vw;
+    word-spacing: 1px;
 }
 
 .fa-gamepad {
@@ -179,3 +177,61 @@ div i {
     }
 }
 
+/*cards jogos*/
+
+.titulo-jogos {
+    font-size: 20;
+    text-align: center;
+    margin: 4rem 0 2rem;
+    padding: 2rem;
+}
+
+.card-jogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+
+.item-jogo {
+    width: 370px;
+    height: 525px;   
+    margin: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1rem;
+    box-shadow: 1px 1px 30px var(--color-black);
+    border-radius:  10px;
+    transition: 0.5s;
+    background:var(--color-darkgreen);
+
+}
+
+.imagem-jogo {
+    border-radius: 10px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.4);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1094px)  { 
+    nav ul {
+    display: none;
+    }
+}
+@media (max-width: 1094px) {
+        .btn-bottom {
+        padding:1ch;
+        font-size:15px;
+        }
+    }
