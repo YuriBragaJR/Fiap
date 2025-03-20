@@ -13,11 +13,12 @@
 /*Variaveis*/
 :root {
     --color-white: #FFFFFF;
-    --color-darkgreen: #197339;
+    --color-darkgreen: #186432;
     --color-black: #000000;
     --color-green: #80D941;
     --color-purple: #973ebd;
-    --color-lightgreen:#78ff1f;
+    --colo-lightgreens:#aeff51;
+    --color-fadedgreen:#19733859;
     
 }
 
@@ -31,7 +32,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 2.2)), url(../images/1130469.png);
     font-size: 1.6rem;
     width: 100%;
-    height: 165vh;    
+    height: 170vh;    
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
@@ -116,7 +117,7 @@ div i {
     justify-content:space-between;
     flex-wrap: wrap;
     padding: 1.5rem;
-    gap: 50px;
+    gap: 30px;
     margin: 12rem auto;
     
 }
@@ -147,10 +148,10 @@ div i {
 .btn-bottom:hover {
     transition: 0.5s;
     background-color: transparent;
-    color: var(--color-lightgreen);
-    border: 2px solid var(--color-lightgreen);
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
     .fa-gamepad {
-        color: var(--color-lightgreen)
+        color: var(--color-green)
     }
 }
 
@@ -173,8 +174,6 @@ div i {
     }
 }
 
-/*cards jogos*/
-
 .titulo-jogos {
     font-size: 40px;
     text-align: center;
@@ -182,36 +181,109 @@ div i {
     padding: 2rem;
 }
 
-.card-jogo {
+/*cards jogos*/
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+    padding:90px 10px;
+}
+
+.container2 .card {
+    position: relative;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 80px;
-    
-}
-
-
-.item-jogo {
+    align-items: flex-start;
     width: 350px;
-    height: 515px;   
-    margin: 2rem 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    
-    padding: 1rem;
-    box-shadow: 1px 1px 30px var(--color-black);
-    border-radius:  10px;
-    transition: 0.5s;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow:0 35px 80px rgba(0,0,0, 0.2) ;
+    background: var(--color-fadedgreen);
+    transition: .5s;
+
+}
+.container2 .card:hover {
+    height: 500px;
     background:var(--color-darkgreen);
+    
+    
+    
+}
+
+.container2 .card .chars {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    overflow:hidden;
+    transition: .5s;
+    
+}
+
+.container2 .card .chars img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 .card .conteudo {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    padding: 0 30px;
+    text-align: center;
+    transition: .5s;
 
 }
 
-.imagem-jogo {
-    border-radius: 10px;
-    box-shadow: 0 15px 45px rgba(0,0,0,.4);
+.container2 .card:hover .conteudo {
+    top: 150px;
+    height: 250px;
 }
+
+.container2 .card:hover .chars {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,.2);
+    border-radius: 5px;
+
+}
+.container2 .card .conteudo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: var(--color-white);
+}
+
+.container2 .card .conteudo a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #000000;
+    color: #ffffff;
+}
+
+
+.container2 .card .conteudo a:hover {
+    background-color: var(--color-green);
+    color: var(--color-black);
+    font-weight: 700;
+    transition: .5s;
+}
+
+
 
 
 
